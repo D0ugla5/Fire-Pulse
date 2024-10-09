@@ -4,9 +4,9 @@ const users = [
 ];
 
 const musicLibrary = [
-    { title: 'Song 1', artist: 'Artist 1' },
-    { title: 'Song 2', artist: 'Artist 2' },
-    { title: 'Song 3', artist: 'Artist 3' }
+    { title: 'Sound of silencs', artist: 'Unknown' },
+    { title: 'Run', artist: 'Joji' },
+    { title: 'Breakin the habits', artist: 'Linking park' }
 ];
 
 function login() {

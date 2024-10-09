@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Pulse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-page" id="loginPage">
+            <h2>Login to Fire Pulse</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div class="library-page" id="libraryPage" style="display: none;">
+            <h2>Welcome to Fire Pulse</h2>
+            <button onclick="logout()">Logout</button>
+            <h3>Your Music Library</h3>
+            <ul id="musicLibrary">
+                <!-- Songs will be listed here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

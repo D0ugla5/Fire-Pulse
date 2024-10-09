@@ -8,7 +8,7 @@ body {
     background-color: #4a90e2; /* Azul de fundo */
 }
 
-.container {
+.container{
     width: 400px;
     padding: 20px;
     background-color: #4a90e2; /* Mesma cor de fundo para integrar */
@@ -46,7 +46,7 @@ input {
     border-radius: 25px;
     text-align: center;
     background-color: #b0d4f1; /* Cor de fundo dos inputs */
-    color: #fff; /* Cor do texto dos inputs */
+    color: #000000; /* Cor do texto dos inputs */
 }
 
 button {

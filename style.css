@@ -45,7 +45,7 @@ input {
     border-radius: 25px;
     text-align: center;
     background-color: #b0d4f1; /* Cor de fundo dos inputs */
-    color: #fff; /* Cor do texto dos inputs */
+    color: #000000; /* Cor do texto dos inputs */
 }
 
 button {

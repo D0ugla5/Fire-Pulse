@@ -33,10 +33,10 @@ function signup() {
 
     if (password === confirmPassword) {
         users.push({ username, password });
-        alert('Signup successful! Please log in.');
+        alert('Cadastrado!!!');
         showLogin();
     } else {
-        alert('Passwords do not match.');
+        alert('Senha ou usuario estão incorretos');
     }
 }
 
@@ -67,4 +67,8 @@ function loadMusicLibrary() {
         li.textContent = `${song.title} - ${song.artist}`;
         libraryElement.appendChild(li);
     });
+}
+
+function loginCadastro() {
+    window.location.href = 'index.html'
 }

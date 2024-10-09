@@ -1,12 +1,12 @@
 const users = [
-    { username: 'user1', password: 'password1' },
+    { username: 'jão', password: '1234' },
     { username: 'user2', password: 'password2' }
 ];
 
 const musicLibrary = [
-    { title: 'Sound of silencs', artist: 'Unknown' },
+    { title: 'Sound of Silence', artist: 'Unknown' },
     { title: 'Run', artist: 'Joji' },
-    { title: 'Breakin the habits', artist: 'Linking park' }
+    { title: 'Breaking the Habit', artist: 'Linkin Park' }
 ];
 
 function login() {
@@ -16,9 +16,7 @@ function login() {
     const user = users.find(user => user.username === username && user.password === password);
 
     if (user) {
-        document.getElementById('loginPage').style.display = 'none';
-        document.getElementById('libraryPage').style.display = 'block';
-        loadMusicLibrary();
+        window.location.href = 'pulse.html'; // Redireciona para a página pulse.html
     } else {
         alert('Invalid credentials');
     }
@@ -40,4 +38,12 @@ function loadMusicLibrary() {
         li.textContent = `${song.title} - ${song.artist}`;
         libraryElement.appendChild(li);
     });
+}
+
+function cadastrar() {
+    window.location.href = 'cadastro.html'; // Redireciona para a página de cadastro
+}
+
+function entrarLogin() {
+    window.location.href = 'index.html'; // Redireciona para a página de login
 }

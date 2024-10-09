@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Pulse</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="/Fire-Pulse/imagens/firePulse2.png" alt="Fire Pulse Logo" class="logo">
+        </div>
+        <div class="login-page" id="loginPage">
+            <h2>Cadastro</h2>
+            <input type="text" id="signupUsername" placeholder="Insira seu usuário">
+            <input type="email" id="signupEmail" placeholder="Insira seu email">
+            <input type="password" id="signupPassword" placeholder="Insira sua senha">
+            <input type="password" id="signupConfirmPassword" placeholder="Confirme sua senha">
+            <button onclick="signup()">Cadastrar</button>
+            <p>Já tem uma conta? <a href="javascript:void(0);" onclick="showLogin()">Logar</a></p>
+        </div>
+
+        <div class="library-page" id="libraryPage" style="display: none;">
+            <h2>Welcome to Fire Pulse</h2>
+            <button onclick="logout()">Logout</button>
+            <h3>Your Music Library</h3>
+            <ul id="musicLibrary">
+                <!-- Songs will be listed here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
